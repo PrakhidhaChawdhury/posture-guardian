@@ -17,3 +17,7 @@ I am documenting the complete development cycle, including troubleshooting, mode
 - **AI Engine:** Google Teachable Machine (Pose Model)
 - **Input:** Wireless Webcam via DroidCam
 - **Platform:** Web-based browser classification
+
+## Acknowledgements
+- **Development Process:** This project is developed by Prakhidha Chawdhury as part of the YIIC internship program.
+- **Tools & Support:** I utilized Google Gemini as an AI-collaborator for architectural guidance, debugging, and documentation strategies.
