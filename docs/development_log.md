@@ -28,3 +28,9 @@
 - **Discovery:** I simplified the training dataset to only two core classes: 'Good' (Upright) and 'Bad' (Collapsed).
 - **Analysis:** By removing 'null' classes and minimizing data complexity, the model's 'Signal-to-Noise' ratio improved drastically. The AI no longer experiences 'feature overlap' because the boundary between classes is now unambiguous.
 - **Key Learning:** Simplicity often outperforms complexity in early-stage ML development.
+
+
+## System Behavior: The Focus Proxy
+- **Observation:** The model effectively discriminates between 'Engaged' (Straight/Forward leaning) and 'Disengaged/Relaxed' (Leaning back) states.
+- **Analysis:** Rather than strictly enforcing a perfect 90-degree spinal angle (which is physically uncomfortable and unnatural for long periods), the model acts as a proxy for attention.
+- **Conclusion:** By using 'Leaning Back' as the indicator for 'Bad Posture', the system successfully flags moments of low-focus/rest rather than minor postural variations.
