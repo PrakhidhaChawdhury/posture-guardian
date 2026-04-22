@@ -21,3 +21,10 @@
 - **Critical Realization:** Attempting to force an AI to distinguish between 'Natural Forward Lean' and 'Slouching' using basic pose estimation creates a conflict of definitions.
 - **Project Pivot:** 1. I will redefine the 'Bad Posture' class to look specifically for 'Spinal Collapse' (shoulders caving inward and head dropping below a threshold) rather than simple 'forward leaning'. 
     2. I am officially documenting this as a 'System Limitation'. The model is designed to detect *extreme* slouching, not micro-ergonomic adjustments during active writing.
+
+
+## Trial 03: The 'Less is More' Breakthrough
+- **Result:** High accuracy achieved.
+- **Discovery:** I simplified the training dataset to only two core classes: 'Good' (Upright) and 'Bad' (Collapsed).
+- **Analysis:** By removing 'null' classes and minimizing data complexity, the model's 'Signal-to-Noise' ratio improved drastically. The AI no longer experiences 'feature overlap' because the boundary between classes is now unambiguous.
+- **Key Learning:** Simplicity often outperforms complexity in early-stage ML development.
