@@ -1,7 +1,6 @@
 # Development Log
 
 ## Trial 01: Initial Setup
-- **Date:** 2026-04-23
 - **Goal:** Get the basic Pose model running with webcam input.
 - **Result:** Functional, but the model has a high 'False Positive' rate.
 - **Observation:** Bad posture is being triggered even when sitting straight. 
@@ -34,3 +33,9 @@
 - **Observation:** The model effectively discriminates between 'Engaged' (Straight/Forward leaning) and 'Disengaged/Relaxed' (Leaning back) states.
 - **Analysis:** Rather than strictly enforcing a perfect 90-degree spinal angle (which is physically uncomfortable and unnatural for long periods), the model acts as a proxy for attention.
 - **Conclusion:** By using 'Leaning Back' as the indicator for 'Bad Posture', the system successfully flags moments of low-focus/rest rather than minor postural variations.
+
+
+## Final Design Analysis: The 'Focus-Proximity' Proxy
+- **Observation:** The model effectively classifies 'Forward-Leaning' (close to the table) as 'Good' and 'Leaning Back' (distant from the table) as 'Bad'.
+- **Interpretation:** Rather than strictly monitoring spinal angle, the model functions as a 'Focus-Proximity' monitor. It treats physical proximity to the workspace as a proxy for cognitive engagement.
+- **Design Choice:** I have opted for a binary classification model (Good/Bad) to ensure high model stability. The 'Absent/Null' state is treated as a system constraint; the model is intended for use during active study sessions only. This design maintains high reliability and prevents 'classification flickering' that occurs with multi-class models.
