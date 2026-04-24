@@ -1,15 +1,24 @@
 # Posture Guardian
 
-**Status:** 🚧 In Active Development
+**Status:** 🚀 MVP (Minimum Viable Product)
 
 ## Overview
-An AI-powered system that uses Pose Estimation to monitor and correct sitting posture during study sessions. 
+An AI-powered system that uses Pose Estimation to monitor sitting habits during study sessions. Rather than simple posture tracking, this system acts as a **'Focus-Proximity' monitor**, utilizing physical alignment to proxy for cognitive engagement.
 
-## The Mission
-To leverage computer vision to minimize poor ergonomic habits (slouching) during long hours of academic study.
+## Live Model
+You can access and test the trained model here:
+👉 **[Posture Guardian Teachable Machine Link](https://teachablemachine.withgoogle.com/models/98LWmWUw9/)**
+
+## How to Use
+To get accurate results, the system requires specific physical setup:
+1. **Camera Position:** The webcam **must** be placed in a **side-profile** orientation. The model relies on the skeletal alignment (head, shoulder, and hip) visible from the side.
+2. **Alignment:** Ensure your torso and head are clearly visible.
+3. **Behavioral Logic:** - **'Good Posture'** is detected when you are sitting straight or leaning slightly forward (engaged in writing/studying).
+   - **'Bad Posture'** is detected when you lean back into the chair (disengaged/resting).
+4. **Environment:** Best used in consistent lighting for the clearest pose tracking.
 
 ## Project Journey
-I am documenting the complete development cycle, including troubleshooting, model iterations, and configuration changes.
+I am documenting the complete development cycle, including troubleshooting, model iterations, and the "Focus-Proximity" discovery in the development log.
 
 👉 **[View the full Development Log and Troubleshooting History](./docs/development_log.md)**
 
